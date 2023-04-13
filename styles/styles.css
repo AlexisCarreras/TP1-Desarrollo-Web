@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+body {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header de la web */
+header {
+  background-image: linear-gradient(rgba(0, 0, 100, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../assets/img/sillonHeader.jpg");
+  height: 500px;
+  overflow: hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sectionHeader {
+  display: flex;
+  flex-grow: 1;
+  width: 70%;
+  margin: auto;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.fontsHeader {
+  font-weight: 600;
+  letter-spacing: 0.0075em;
+  line-height: 1.75;
+  color: #ffff;
+}
+
+.titleHeader {
+  display: flex;
+  flex-grow: 1;
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.containerButtonsHeader {
+  display: flex;
+  justify-content: space-around;
+  width: 45%;
+}
+
+.articleButtonHeader {
+  display: flex;
+}
+
+.buttonsHeader {
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+}
+
+.buttonLogin {
+  margin-left: 1rem;
+  height: 4.5vh;
+  border: 0;
+  cursor: pointer;
+  outline: 0;
+  padding: 0px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  background-color: #1976d2;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+.buttonLogin:hover {
+  text-decoration: none;
+  background-color: #1565c0;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.textButtonLogin {
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.75;
+  letter-spacing: 0.02857em;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+.iconHeader {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end;
+  width: 2.3rem !important;
+  color: #ffff;
+}
+
+.sectionCentral {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.titlePage {
+  margin: 0px;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 2.25rem;
+  line-height: 1.3;
+  font-weight: 700;
+  opacity: 1;
+  text-transform: none;
+  vertical-align: unset;
+  text-decoration: none;
+  color: #ffff;
+  letter-spacing: -0.125px;
+}
+
+.bodyPage {
+  margin: 8px 0px 0px;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.625;
+  opacity: 1;
+  text-transform: none;
+  vertical-align: unset;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  letter-spacing: -0.125px;
+}
+
+/* Main Centrar de la web */
+/* main {
+ 
+} */
