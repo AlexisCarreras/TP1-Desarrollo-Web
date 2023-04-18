@@ -9,34 +9,50 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
+    <link rel="shortcut icon" href="./assets/img/icons/favicon.png" />
     <title>Mercado Living</title>
   </head>
   <body>
+    <!-- HEADER -->
+    <a name="inicio" id="inicio"></a> 
     <header>
       <section class="sectionHeader">
         <h4 class="fontsHeader titleHeader">Mercado Living</h4>
         <div class="containerButtonsHeader">
           <article class="articleButtonHeader">
-            <h6 class="fontsHeader buttonsHeader">Buscar</h6>
+            <a class="headerEnlace" href="#inicio">
+              <h6 class="fontsHeader buttonsHeader">Inicio</h6>
+            </a>
+            <span class="material-symbols-outlined iconHeader">home</span>
+          </article>
+          <article class="articleButtonHeader">
+            <a class="headerEnlace" href="#buscar">
+              <h6 class="fontsHeader buttonsHeader">Buscar</h6>
+            </a>
             <span class="material-symbols-outlined iconHeader"> search </span>
           </article>
           <article class="articleButtonHeader">
-            <h6 class="fontsHeader buttonsHeader">Clientes</h6>
-            <span class="material-symbols-outlined iconHeader">
-              partner_exchange
-            </span>
-          </article>
-          <article class="articleButtonHeader">
-            <h6 class="fontsHeader buttonsHeader">Preguntas Frecuentes</h6>
+            <a class="headerEnlace" href="#aboutUs">
+              <h6 class="fontsHeader buttonsHeader">Quiénes Somos</h6>
+            </a>
             <span class="material-symbols-outlined iconHeader">
               contact_support
             </span>
           </article>
+          <!-- <article class="articleButtonHeader">
+            <h6 class="fontsHeader buttonsHeader">Clientes</h6>
+            <span class="material-symbols-outlined iconHeader">
+              partner_exchange
+            </span>
+          </article> -->
           <article class="articleButtonHeader">
             <h6 class="fontsHeader buttonsHeader">Contacto</h6>
             <span class="material-symbols-outlined iconHeader"> mail </span>
           </article>
         </div>
+        <button class="buttonLogin">
+          <span class="textButtonLogin"> Registrate </span>
+        </button>
         <button class="buttonLogin">
           <span class="textButtonLogin"> Iniciar Sesión </span>
         </button>
@@ -48,8 +64,443 @@
           blanditiis tenetur unde suscipit.
         </p>
       </section>
+      <a name="buscar" id="bucar"></a> 
     </header>
 
-    <main></main>
+    <main class="mainFirst">
+      <!-- SELECT FILTERS -->
+      <div class="containerSelects">
+        <article>
+          <label class="select-label">Modelos</label>
+          <div class="select">
+            <select class="select-text" required>
+              <option value="" disabled selected></option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+            </select>
+            <span class="select-highlight"></span>
+            <span class="select-bar"></span>
+          </div>
+        </article>
+        <article>
+          <label class="select-label">Telas</label>
+          <div class="select">
+            <select class="select-text" required>
+              <option value="" disabled selected></option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+            </select>
+            <span class="select-highlight"></span>
+            <span class="select-bar"></span>
+          </div>
+        </article>
+        <article>
+          <label class="select-label">Colores</label>
+          <div class="select">
+            <select class="select-text" required>
+              <option value="" disabled selected></option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+            </select>
+            <span class="select-highlight"></span>
+            <span class="select-bar"></span>
+          </div>
+        </article>
+        <article class="containerButtonSearch">
+          <button class="buttonSearch">
+            <span class="textButtonSearch"> Buscar </span>
+          </button>
+        </article>
+      </div>
+      <!-- CARDS PRODUCTS -->
+      <div class="containerCards">
+        <section class="card">
+          <article class="containerImgCard">
+            <img
+              class="imgCard"
+              src="https://images.unsplash.com/photo-1519643225200-94e79e383724?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80"
+              alt="imagenDeProducto"
+              height="230"
+            />
+          </article>
+          <div class="box box1"></div>
+          <article class="articleDescription">
+            <h4 class="titleCardProduct">Sillón Individual</h4>
+            <p class="textCardProduct">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+              placeat sit. Voluptatum aperiam.
+            </p>
+          </article>
+          <article class="containerDetail">
+            <button class="buttonDetail">Ver Detalle</button>
+            <div class="containSpanProduct">
+              <span class="spanProduct">Stock Disponible</span>
+            </div>
+          </article>
+        </section>
+        <section class="card">
+          <article class="containerImgCard">
+            <img
+              class="imgCard"
+              src="https://images.unsplash.com/photo-1549187774-b4e9b0445b41?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+              alt="imagenDeProducto"
+              height="230"
+            />
+          </article>
+          <div class="box box2"></div>
+          <article class="articleDescription">
+            <h4 class="titleCardProduct">Sillón Doble</h4>
+            <p class="textCardProduct">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+              placeat sit. Voluptatum aperiam.
+            </p>
+          </article>
+          <article class="containerDetail">
+            <button class="buttonDetail">Ver Detalle</button>
+            <div class="containSpanProduct">
+              <span class="spanProduct">Stock Disponible</span>
+            </div>
+          </article>
+        </section>
+        <section class="card">
+          <article class="containerImgCard">
+            <img
+              class="imgCard"
+              src="https://images.unsplash.com/photo-1484101403633-562f891dc89a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1474&q=80"
+              alt="imagenDeProducto"
+              height="230"
+            />
+          </article>
+          <div class="box box3"></div>
+          <article class="articleDescription">
+            <h4 class="titleCardProduct">Sillón Doble</h4>
+            <p class="textCardProduct">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+              placeat sit. Voluptatum aperiam.
+            </p>
+          </article>
+          <article class="containerDetail">
+            <button class="buttonDetailDisabled buttonDetail" disabled>
+              Ver Detalle
+            </button>
+            <div class="containSpanProduct containSpanProductSS">
+              <span class="spanProduct">Sin Stock</span>
+            </div>
+          </article>
+        </section>
+      </div>
+      <!-- PAGINATOR -->
+      <div class="containerPaginator">
+        <nav class="navPaginator">
+          <ul class="listPages">
+            <li>
+              <button class="buttonPage" disabled>
+                <span class="material-symbols-outlined spanArrow arrowDisabled">
+                  chevron_left
+                </span>
+              </button>
+            </li>
+            <li>
+              <button class="buttonPage buttonPageSelected">1</button>
+            </li>
+            <li>
+              <button class="buttonPage buttonHover">2</button>
+            </li>
+            <li>
+              <button class="buttonPage buttonHover">3</button>
+            </li>
+            <li>
+              <button class="buttonPage buttonHover">4</button>
+            </li>
+            <li>
+              <button class="buttonPage buttonHover">5</button>
+            </li>
+            <li>
+              <button class="buttonPage buttonHover">
+                <span class="material-symbols-outlined spanArrow">
+                  navigate_next
+                </span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </main>
+
+    <!-- SEGUNDO MAIN: CONTIENE INFORMACIÓN DE NOSOTROS -->
+    <main class="mainSecond">
+      <!-- Text Information -->
+      <div class="containerUs">
+        <a name="aboutUs" id="aboutUs"></a> 
+        <section class="sectionOne">
+          <article class="articleImg">
+            <img src="./assets/img/illustration_teams.svg" alt="imgUs" />
+          </article>
+          <article class="articleText">
+            <h2 class="titleUs">¿Quiénes Somos?</h2>
+            <div class="containerText">
+              <p class="textUs">
+                Vivamus consectetuer hendrerit lacus. Curabitur a felis in nunc
+                fringilla tristique. Nulla neque dolor, sagittis eget, iaculis
+                quis, molestie non, velit.
+              </p>
+              <p class="textUs">
+                Nam pretium turpis et arcu. Praesent porttitor, nulla vitae
+                posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut
+                ipsum. Praesent venenatis metus en tortor pulvinar varius.
+              </p>
+            </div>
+            <button class="buttonUs">
+              <span>Visita Nuestras Políticas</span>
+              <span class="material-symbols-outlined arrowButton">
+                navigate_next
+              </span>
+            </button>
+          </article>
+        </section>
+        <section class="sectionTwo">
+          <article>
+            <div class="containerIcon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                aria-hidden="true"
+                role="img"
+                class="iconAwards"
+                width="1em"
+                height="1em"
+                viewBox="0 0 32 32"
+              >
+                <path
+                  fill="currentColor"
+                  d="m23 4l-5 3.75v6.5L15 12l-5 3.75v6.5L7 20l-5 3.75V30h2v-5.25l3-2.25l3 2.25V30h2V16.75l3-2.25l3 2.25V30h2V8.75l3-2.25l3 2.25V30h2V7.75L23 4z"
+                ></path>
+              </svg>
+            </div>
+            <h2 class="titleInfo">12</h2>
+            <p class="paragraphInfo">Años de Experiencia</p>
+          </article>
+          <article>
+            <div class="containerIcon violet">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                aria-hidden="true"
+                role="img"
+                class="iconAwards"
+                width="1em"
+                height="1em"
+                viewBox="0 0 32 32"
+              >
+                <path
+                  fill="currentColor"
+                  d="M26 7h-2V6a2.002 2.002 0 0 0-2-2H10a2.002 2.002 0 0 0-2 2v1H6a2.002 2.002 0 0 0-2 2v3a4.005 4.005 0 0 0 4 4h.322A8.169 8.169 0 0 0 15 21.934V26h-5v2h12v-2h-5v-4.069A7.966 7.966 0 0 0 23.74 16H24a4.005 4.005 0 0 0 4-4V9a2.002 2.002 0 0 0-2-2ZM8 14a2.002 2.002 0 0 1-2-2V9h2Zm14 0a6 6 0 0 1-6.186 5.997A6.2 6.2 0 0 1 10 13.707V6h12Zm4-2a2.002 2.002 0 0 1-2 2V9h2Z"
+                ></path>
+              </svg>
+            </div>
+            <h2 class="titleInfo">N° 1</h2>
+            <p class="paragraphInfo">Mercado Líder</p>
+          </article>
+          <article>
+            <div class="containerIcon yellow">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                aria-hidden="true"
+                role="img"
+                class="iconAwards"
+                width="1em"
+                height="1em"
+                viewBox="0 0 32 32"
+              >
+                <path
+                  fill="currentColor"
+                  d="M27 3H5a2.002 2.002 0 0 0-2 2v22a2.002 2.002 0 0 0 2 2h22a2.003 2.003 0 0 0 2-2V5a2.002 2.002 0 0 0-2-2Zm0 6H17V5h10ZM15 27h-4v-4h4Zm0-6h-4v-4h4Zm-6 0H5v-4h4Zm2-6v-4h10v4Zm0-6V5h4v4Zm12 2h4v4h-4ZM9 5v10H5V5ZM5 23h4v4H5Zm12 4V17h10.001l.001 10Z"
+                ></path>
+              </svg>
+            </div>
+            <h2 class="titleInfo">150</h2>
+            <p class="paragraphInfo">Proyectos</p>
+          </article>
+          <article>
+            <div class="containerIcon green">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                aria-hidden="true"
+                role="img"
+                class="iconAwards"
+                width="1em"
+                height="1em"
+                viewBox="0 0 32 32"
+              >
+                <path
+                  fill="currentColor"
+                  d="m25 10l1.593 3l3.407.414l-2.5 2.253L28 19l-3-1.875L22 19l.5-3.333l-2.5-2.253L23.5 13l1.5-3zm-3 20h-2v-5a5.006 5.006 0 0 0-5-5H9a5.006 5.006 0 0 0-5 5v5H2v-5a7.008 7.008 0 0 1 7-7h6a7.008 7.008 0 0 1 7 7zM12 4a5 5 0 1 1-5 5a5 5 0 0 1 5-5m0-2a7 7 0 1 0 7 7a7 7 0 0 0-7-7z"
+                ></path>
+              </svg>
+            </div>
+            <h2 class="titleInfo">32k</h2>
+            <p class="paragraphInfo">Clientes Felices</p>
+          </article>
+        </section>
+        <!-- Icons and data Information -->
+        <section class="sectionThree">
+          <h2 class="titleValues">Nuestros valores fundamentales</h2>
+          <div class="containerValuesCore">
+            <article class="articleValues">
+              <img
+                src="../assets/img/agreement.svg"
+                class="iconsValues"
+                alt="icon"
+              />
+              <h5 class="titleIconsValues">Satisfacción del Cliente</h5>
+              <p class="textIconsValues">
+                Aenean urna dictum adipiscing nec, cras quisque.
+              </p>
+            </article>
+            <article class="articleValues">
+              <img
+                src="../assets/img/transparency.svg"
+                class="iconsValues"
+                alt="icon"
+              />
+              <h5 class="titleIconsValues">Transparencia</h5>
+              <p class="textIconsValues">
+                Aenean urna dictum adipiscing nec, cras quisque.
+              </p>
+            </article>
+            <article class="articleValues">
+              <img
+                src="../assets/img/reputation.svg"
+                class="iconsValues"
+                alt="icon"
+              />
+              <h5 class="titleIconsValues">Reputación</h5>
+              <p class="textIconsValues">
+                Aenean urna dictum adipiscing nec, cras quisque.
+              </p>
+            </article>
+            <article class="articleValues">
+              <img
+                src="../assets/img/popularity.svg"
+                class="iconsValues"
+                alt="icon"
+              />
+              <h5 class="titleIconsValues">Cooperación</h5>
+              <p class="textIconsValues">
+                Aenean urna dictum adipiscing nec, cras quisque.
+              </p>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- SEGUNDO MAIN: CONTIENE INFORMACIÓN DE NOSOTROS -->
+    <main class="mainLast">
+      <section class="sectionContact">
+        <img class="containerContact" src="./assets/img/contacto.jpg" alt="imagen de contacto">
+        <div class="containerContact">
+          <h3 class="titleForm">Dejanos tu Consulta</h3>
+          <p class="textForm">Responderemos lo más pronto posible</p>
+          <form action="">
+            <div class="containerLabelAndInput">
+              <label class="labelForm">
+                Nombre Completo
+              </label>
+              <input class="inputForm" name="fullName" type="text">
+            </div>
+            <div class="containerLabelAndInput">
+              <label class="labelForm">
+                Correo Electrónico
+              </label>
+              <input class="inputForm" name="fullName" type="email">
+            </div>
+            <div class="containerLabelAndInput">
+              <label class="labelForm">
+                Motivo
+              </label>
+              <input class="inputForm" name="fullName" type="text">
+            </div>
+            <div class="containerLabelAndInput">
+              <label class="labelForm">
+                Mensaje
+              </label>
+              <textarea class="inputForm" rows="4" style="height: 88px;"name="message"></textarea>
+            </div>
+            <button class="buttonForm" type="submit">Enviar Consulta</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="containerFooter">
+        <div class="containerEnlaces">
+          <a class="enlace" href="/">Compañía</a>
+          <a class="enlace maginEnlace" href="/">Sobre Nosotros</a>
+          <a class="enlace maginEnlace" href="/">Equipo</a>
+          <a class="enlace maginEnlace" href="/">Productos</a>
+          <a class="enlace maginEnlace" href="/">Blog</a>
+          <a class="enlace maginEnlace" href="/">Licencia</a>
+        </div>
+        <div class="containerEnlacesIcons">
+          <a class="iconEnlace" href="/"
+            ><svg
+              class="iconSocial"
+              focusable="false"
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              data-testid="FacebookIcon"
+            >
+              <path
+                d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m13 2h-2.5A3.5 3.5 0 0 0 12 8.5V11h-2v3h2v7h3v-7h3v-3h-3V9a1 1 0 0 1 1-1h2V5z"
+              ></path></svg></a>
+          <a class="iconEnlace marginIcon" href="/"
+            ><svg
+              class="iconSocial"
+              focusable="false"
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              data-testid="TwitterIcon"
+            >
+              <path
+                d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"
+              ></path></svg></a>
+          <a class="iconEnlace marginIcon" href="/"
+            ><svg
+              class="iconSocial"
+              focusable="false"
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              data-testid="InstagramIcon"
+            >
+              <path
+                d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"
+              ></path></svg></a>
+          <a class="iconEnlace marginIcon" href="/"
+            ><svg
+              class="iconSocial"
+              focusable="false"
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              data-testid="PinterestIcon"
+            >
+              <path
+                d="M9.04 21.54c.96.29 1.93.46 2.96.46a10 10 0 0 0 10-10A10 10 0 0 0 12 2 10 10 0 0 0 2 12c0 4.25 2.67 7.9 6.44 9.34-.09-.78-.18-2.07 0-2.96l1.15-4.94s-.29-.58-.29-1.5c0-1.38.86-2.41 1.84-2.41.86 0 1.26.63 1.26 1.44 0 .86-.57 2.09-.86 3.27-.17.98.52 1.84 1.52 1.84 1.78 0 3.16-1.9 3.16-4.58 0-2.4-1.72-4.04-4.19-4.04-2.82 0-4.48 2.1-4.48 4.31 0 .86.28 1.73.74 2.3.09.06.09.14.06.29l-.29 1.09c0 .17-.11.23-.28.11-1.28-.56-2.02-2.38-2.02-3.85 0-3.16 2.24-6.03 6.56-6.03 3.44 0 6.12 2.47 6.12 5.75 0 3.44-2.13 6.2-5.18 6.2-.97 0-1.92-.52-2.26-1.13l-.67 2.37c-.23.86-.86 2.01-1.29 2.7v-.03z"
+              ></path></svg></a>
+        </div>
+        <div class="containerCopy">
+          <p class="textFooter">
+            Copyright © 2023 1er Trabajo Práctico por:
+            <a class="textAutor" href="/" target="_blank" rel="noreferrer">
+              Alexis Carreras.
+            </a>
+          </p>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
