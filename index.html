@@ -46,16 +46,18 @@
             </span>
           </article> -->
           <article class="articleButtonHeader">
-            <h6 class="fontsHeader buttonsHeader">Contacto</h6>
+            <a class="headerEnlace" href="#contacto">
+              <h6 class="fontsHeader buttonsHeader">Contacto</h6>
+            </a>
             <span class="material-symbols-outlined iconHeader"> mail </span>
           </article>
         </div>
-        <button class="buttonLogin">
-          <span class="textButtonLogin"> Registrate </span>
-        </button>
-        <button class="buttonLogin">
-          <span class="textButtonLogin"> Iniciar Sesión </span>
-        </button>
+        <a href="./pages/register.html">
+          <button class="buttonSecondary buttonRegister buttonUser">Registrate</button>
+        </a>
+        <a href="./pages/login.html">
+          <button class="buttonPrimary buttonUser">Iniciar Sesión</button>
+        </a>
       </section>
       <section class="sectionCentral">
         <h1 class="titlePage">Bienvenido a Mercado Living</h1>
@@ -67,6 +69,7 @@
       <a name="buscar" id="bucar"></a> 
     </header>
 
+    <!-- PRIMER MAIN: CONTIENE BUSCADOR DE PRODUCTOS, PRODUCTOS Y PAGINADO-->
     <main class="mainFirst">
       <!-- SELECT FILTERS -->
       <div class="containerSelects">
@@ -110,7 +113,7 @@
           </div>
         </article>
         <article class="containerButtonSearch">
-          <button class="buttonSearch">
+          <button class="buttonPrimary buttonSearch">
             <span class="textButtonSearch"> Buscar </span>
           </button>
         </article>
@@ -135,7 +138,7 @@
             </p>
           </article>
           <article class="containerDetail">
-            <button class="buttonDetail">Ver Detalle</button>
+            <button class="buttonSecondary buttonDetail">Ver Detalle</button>
             <div class="containSpanProduct">
               <span class="spanProduct">Stock Disponible</span>
             </div>
@@ -159,7 +162,7 @@
             </p>
           </article>
           <article class="containerDetail">
-            <button class="buttonDetail">Ver Detalle</button>
+            <button class="buttonSecondary buttonDetail">Ver Detalle</button>
             <div class="containSpanProduct">
               <span class="spanProduct">Stock Disponible</span>
             </div>
@@ -253,7 +256,7 @@
                 ipsum. Praesent venenatis metus en tortor pulvinar varius.
               </p>
             </div>
-            <button class="buttonUs">
+            <button class="buttonSecondary buttonUs">
               <span>Visita Nuestras Políticas</span>
               <span class="material-symbols-outlined arrowButton">
                 navigate_next
@@ -399,37 +402,39 @@
         </section>
       </div>
     </main>
-    <!-- SEGUNDO MAIN: CONTIENE INFORMACIÓN DE NOSOTROS -->
+
+    <!-- TERCER MAIN: CONTIENE FORMULARIO DE CONTACTO -->
+    <a name="contacto" id="contacto"></a> 
     <main class="mainLast">
       <section class="sectionContact">
         <img class="containerContact" src="./assets/img/contacto.jpg" alt="imagen de contacto">
         <div class="containerContact">
           <h3 class="titleForm">Dejanos tu Consulta</h3>
           <p class="textForm">Responderemos lo más pronto posible</p>
-          <form action="">
+          <form action="https://formspree.io/f/myyalwvy" method="POST">
             <div class="containerLabelAndInput">
               <label class="labelForm">
                 Nombre Completo
               </label>
-              <input class="inputForm" name="fullName" type="text">
+              <input class="inputForm" name="Nombre Completo: " type="text">
             </div>
             <div class="containerLabelAndInput">
               <label class="labelForm">
                 Correo Electrónico
               </label>
-              <input class="inputForm" name="fullName" type="email">
+              <input class="inputForm" name="Correo Electrónico: " type="email">
             </div>
             <div class="containerLabelAndInput">
               <label class="labelForm">
                 Motivo
               </label>
-              <input class="inputForm" name="fullName" type="text">
+              <input class="inputForm" name="Motivo: " type="text">
             </div>
             <div class="containerLabelAndInput">
               <label class="labelForm">
                 Mensaje
               </label>
-              <textarea class="inputForm" rows="4" style="height: 88px;"name="message"></textarea>
+              <textarea class="inputForm" rows="4" style="height: 88px;" name="Mensaje: "></textarea>
             </div>
             <button class="buttonForm" type="submit">Enviar Consulta</button>
           </form>

@@ -22,6 +22,72 @@ header {
     0px 5px 8px 0px rgba(0, 0, 0, 0.14), 0px 1px 14px 0px rgba(0, 0, 0, 0.12);
 }
 
+.buttonPrimary {
+  border-radius: 8px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  color: #ffffff;
+  background-color: #fa541c;
+  box-shadow: 0px 3px 1px -2px rgba(145, 158, 171, 0.2),
+    0px 2px 2px 0px rgba(145, 158, 171, 0.14),
+    0px 1px 5px 0px rgba(145, 158, 171, 0.12);
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.buttonPrimary:hover {
+  text-decoration: none;
+  background-color: #b3200e;
+  box-shadow: 0px 2px 4px -1px rgba(145, 158, 171, 0.2),
+    0px 4px 5px 0px rgba(145, 158, 171, 0.14),
+    0px 1px 10px 0px rgba(145, 158, 171, 0.12);
+  box-shadow: 0 8px 16px 0 rgba(250, 84, 28, 0.24);
+}
+
+.buttonSecondary {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  box-shadow: none;
+  color: rgb(33, 43, 54);
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  border-radius: 8px;
+  border: 1px solid currentColor;
+  border-color: rgba(145, 158, 171, 0.32);
+}
+
+.buttonSecondary:hover {
+  border-color: currentColor;
+  box-shadow: 0 0 0 1px currentColor;
+  text-decoration: none;
+  background-color: rgba(33, 43, 54, 0.08);
+}
+
+.buttonTertiary {
+  border: 0;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 8px;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #212b36;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.buttonTertiary:hover {
+  background-color: rgb(69, 79, 91);
+  text-decoration: none;
+  box-shadow: rgba(145, 158, 171, 0.2) 0px 2px 4px -1px,
+    rgba(145, 158, 171, 0.14) 0px 4px 5px 0px,
+    rgba(145, 158, 171, 0.12) 0px 1px 10px 0px;
+}
+
 .headerEnlace {
   text-decoration: none !important;
 }
@@ -65,38 +131,28 @@ header {
   align-items: center;
 }
 
-.buttonLogin {
-  margin-left: 1rem;
-  height: 4vh;
+.buttonUser {
   border: 0;
+  margin-left: 1rem;
   cursor: pointer;
-  outline: 0;
-  padding: 0px 16px;
-  border-radius: 4px;
-  text-decoration: none;
-  background-color: #1976d2;
-  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
-    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
-}
-
-.buttonLogin:hover {
-  text-decoration: none;
-  background-color: #1565c0;
-  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
-    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
-}
-
-.textButtonLogin {
-  color: #fff;
-  font-weight: 600;
+  font-weight: 700;
+  line-height: 1.71429;
   font-size: 0.875rem;
-  line-height: 1.75;
-  letter-spacing: 0.02857em;
+  min-width: 64px;
+  padding: 6px 20px;
+  border-radius: 8px;
 }
 
-/* .material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
-} */
+.buttonRegister {
+  border: none !important;
+}
+
+.buttonRegister:hover {
+  border: none !important;
+  box-shadow: 0 0 0 1px currentColor;
+  text-decoration: none;
+  background-color: rgb(187, 187, 187);
+}
 
 .iconHeader {
   display: flex !important;
@@ -229,7 +285,7 @@ header {
 /* active state */
 .select-text:focus ~ .select-label,
 .select-text:valid ~ .select-label {
-  color: #2f80ed;
+  color: #fa541c;
   top: -20px;
   transition: 0.2s ease all;
   font-size: 14px;
@@ -249,7 +305,7 @@ header {
   width: 0;
   bottom: 1px;
   position: absolute;
-  background: #2f80ed;
+  background: #fa541c;
   transition: 0.2s ease all;
 }
 
@@ -285,35 +341,13 @@ header {
 }
 
 .buttonSearch {
-  background-image: linear-gradient(
-    195deg,
-    rgb(73, 163, 241),
-    rgb(26, 115, 232)
-  );
-  background-position-y: initial;
-  background-repeat: initial;
-  background-attachment: initial;
-  background-origin: initial;
-  background-clip: initial;
-  background-color: initial;
-  box-shadow: rgb(26 115 232 / 15%) 0rem 0.1875rem 0.1875rem 0rem,
-    rgb(26 115 232 / 20%) 0rem 0.1875rem 0.0625rem -0.125rem,
-    rgb(26 115 232 / 15%) 0rem 0.0625rem 0.3125rem 0rem;
   background-size: 150%;
   background-position-x: 25%;
-  cursor: pointer;
   text-decoration: none;
   width: 100%;
   border-radius: 0.5rem;
   min-height: 2.5rem;
   border: none;
-}
-
-.buttonSearch:hover {
-  box-shadow: rgb(26 115 232 / 30%) 0rem 0.1875rem 1rem 0rem,
-    rgb(26 115 232 / 65%) 0rem 0.1875rem 0.1rem -0.125rem,
-    rgb(26 115 232 / 9%) 0rem 0.9rem 0.4rem 0rem;
-  transition: all 150ms ease-in 0s;
 }
 
 .textButtonSearch {
@@ -441,29 +475,16 @@ header {
 }
 
 .buttonDetail {
-  color: rgb(26, 115, 232);
   padding: 0.375rem 1rem;
   margin: 0 16px 1rem 16px;
   line-height: 1.4;
   border-radius: 0.5rem;
-  border: 1px solid rgb(26, 115, 232) !important;
   font-weight: 700;
   font-size: 0.75rem;
-  background-color: transparent;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   letter-spacing: 0.02857em;
   text-transform: uppercase;
   min-width: 64px;
   cursor: pointer;
-}
-
-.buttonDetail:hover {
-  text-decoration: none;
-  background-color: rgba(25, 118, 210, 0.04);
-  border: 1px solid #1976d2;
 }
 
 .buttonDetailDisabled {
@@ -631,33 +652,15 @@ header {
 }
 
 .buttonUs {
-  background-color: transparent;
-  border: 1px solid currentColor;
-  border-color: currentColor;
-  box-shadow: none;
-  border-color: rgba(145, 158, 171, 0.32);
   height: 48px;
   font-size: 15px;
-  cursor: pointer;
   padding: 7px 21px;
-  border-radius: 8px;
   font-weight: 700;
   color: inherit;
   width: 43%;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-}
-
-.buttonUs:hover {
-  border-color: currentColor;
-  box-shadow: 0 0 0 1px currentColor;
-  text-decoration: none;
-  background-color: rgba(33, 43, 54, 0.08);
 }
 
 .arrowButton {
@@ -891,6 +894,7 @@ header {
   margin: 0;
   width: 100%;
   padding: 12px;
+  resize: none;
 }
 
 .inputForm:focus {
@@ -907,7 +911,18 @@ header {
   color: #ffffff;
   height: 48px;
   cursor: pointer;
-  background-color: #212B36;
+  background-color: #212b36;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.buttonForm:hover {
+  background-color: rgb(69, 79, 91);
+  text-decoration: none;
+  box-shadow: rgba(145, 158, 171, 0.2) 0px 2px 4px -1px,
+    rgba(145, 158, 171, 0.14) 0px 4px 5px 0px,
+    rgba(145, 158, 171, 0.12) 0px 1px 10px 0px;
 }
 
 footer {
