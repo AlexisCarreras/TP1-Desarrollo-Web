@@ -192,6 +192,7 @@ main {
   text-align: center;
   border: 0;
   align-items: center;
+  justify-content: center;
 }
 
 .textMoreOption {
@@ -209,7 +210,6 @@ main {
   position: relative;
   width: 100%;
   border-top: thin solid rgba(145, 158, 171, 0.24);
-  top: 50%;
   content: "";
   transform: translateY(50%);
 }
@@ -218,10 +218,52 @@ main {
   position: relative;
   width: 100%;
   border-top: thin solid rgba(145, 158, 171, 0.24);
-  top: 50%;
   content: "";
   transform: translateY(50%);
 }
 
 .containerSocialMedia {
+  display: flex;
+  flex-direction: row;
+  margin-top: 32px;
+  width: 100%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.buttonSocialMedia {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border: 1px solid currentColor;
+  width: 30%;
+  border-color: rgba(145, 158, 171, 0.32);
+  height: 48px;
+}
+
+.buttonSocialMedia:hover {
+  text-decoration: none;
+  background-color: rgba(33, 43, 54, 0.08);
+  box-shadow: 0 0 0 1px currentColor;
+  border-color: rgba(145, 158, 171, 0.32);
+}
+
+.iconSocialMedia {
+  width: 24px;
+  height: 24px;
+}
+
+.colorFB {
+  color: #1877f2;
+}
+
+.colorTW {
+  color: #3ba9ee;
 }
