@@ -1173,7 +1173,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
   }
-  
+
   .containerSelects {
     margin-right: auto !important;
     margin-left: auto !important;
@@ -1331,13 +1331,13 @@ footer {
 /* Responsive para dispositivos MOBILE */
 @media (max-width: 768px) {
   .titlePage {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   .bodyPage {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     text-align: center;
-    width: 80%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1387,7 +1387,7 @@ footer {
   }
 
   .card {
-    max-width: 65%;
+    max-width: 90%;
     margin-top: 4.5rem;
   }
 
@@ -1427,20 +1427,24 @@ footer {
   }
 
   .sectionOne {
-    width: 90%;
+    width: 80%;
     display: flex;
     flex-direction: column;
   }
 
   .articleImg {
-    width: 70%;
+    width: 100%;
     display: flex;
     justify-content: center;
     margin-bottom: 1rem;
   }
 
+  .imgUs {
+    width: 90%;
+  }
+
   .articleText {
-    width: 70%;
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -1456,13 +1460,15 @@ footer {
   }
 
   .buttonUs {
-    width: 70%;
+    width: 90%;
     margin: auto;
   }
 
   .sectionTwo {
-    width: 90%;
+    width: 80%;
     display: flex;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
   }
 
   .containerIcon {
@@ -1475,16 +1481,41 @@ footer {
   }
 
   .sectionThree {
-    width: 90%;
+    width: 95%;
     padding-bottom: 5rem;
   }
 
+  .containerValuesCore {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .articleValues {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 2rem;
+  }
+
+  .articleIcons {
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+
+  .titleValues {
+    font-size: 1.7rem;
+  }
+
   .titleIconsValues {
-    font-size: 1rem;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    margin-bottom: 0.4rem;
   }
 
   .textIconsValues {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 
   .mainLast {
@@ -1499,12 +1530,44 @@ footer {
   }
 
   .containerContact {
-    width: 60%;
+    width: 80%;
+  }
+
+  .inputForm {
+    width: 92%;
+    margin: auto;
+
   }
 
   .buttonForm {
-    width: 106%;
+    width: 100%;
     font-size: 0.8rem;
     height: 2.8rem;
+  }
+
+  footer {
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .containerEnlaces {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .enlace {
+    margin-bottom: 0.5rem;
+  }
+
+  .maginEnlace {
+    margin-left: 0;
+  }
+
+  .textFooter {
+    font-size: 0.9rem;
+  }
+
+  .textAutor {
+    font-size: 0.9rem;
   }
 }
