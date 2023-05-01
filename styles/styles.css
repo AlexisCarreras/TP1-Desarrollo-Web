@@ -30,21 +30,25 @@ header {
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
     color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   color: #ffffff;
-  background-color: #fa541c;
-  box-shadow: 0px 3px 1px -2px rgba(145, 158, 171, 0.2),
-    0px 2px 2px 0px rgba(145, 158, 171, 0.14),
-    0px 1px 5px 0px rgba(145, 158, 171, 0.12);
   cursor: pointer;
   border-radius: 8px;
+  background-image: linear-gradient(
+    195deg,
+    rgb(73, 163, 241),
+    rgb(26, 115, 232)
+  );
+  box-shadow: rgba(26, 115, 232, 0.15) 0rem 0.1875rem 0.1875rem 0rem,
+    rgba(26, 115, 232, 0.2) 0rem 0.1875rem 0.0625rem -0.125rem,
+    rgba(26, 115, 232, 0.15) 0rem 0.0625rem 0.3125rem 0rem;
 }
 
 .buttonPrimary:hover {
   text-decoration: none;
-  background-color: #b3200e;
-  box-shadow: 0px 2px 4px -1px rgba(145, 158, 171, 0.2),
-    0px 4px 5px 0px rgba(145, 158, 171, 0.14),
-    0px 1px 10px 0px rgba(145, 158, 171, 0.12);
-  box-shadow: 0 8px 16px 0 rgba(250, 84, 28, 0.24);
+
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(26, 115, 232, 0.4) 0rem 0.875rem 1.625rem -0.75rem,
+    rgba(26, 115, 232, 0.15) 0rem 0.25rem 1.4375rem 0rem,
+    rgba(26, 115, 232, 0.2) 0rem 0.5rem 0.625rem -0.3125rem;
 }
 
 .buttonSecondary {
@@ -387,9 +391,9 @@ header {
 
 /* CONTAINERS CARDS */
 .containerCards {
-  width: 70%;
+  width: 78%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: row;
   margin: auto;
   padding: 0 0 4rem 0;
@@ -411,6 +415,8 @@ header {
     rgb(0 0 0 / 6%) 0rem 0.125rem 0.25rem -0.0625rem;
   overflow: visible;
   max-width: 400px;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .containerImgCard {
@@ -1057,4 +1063,448 @@ footer {
   text-decoration: none;
   color: rgb(123, 128, 154);
   letter-spacing: -0.125px;
+}
+
+/* Responsive para dispositivos LAPTOP */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .containerSelects {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .articleSelect {
+    width: 25%;
+  }
+
+  /* CONTAINERS CARDS */
+  .containerCards {
+    width: 96%;
+    justify-content: space-between;
+  }
+
+  .card {
+    max-width: 300px;
+  }
+
+  .containerDetail {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .buttonDetail {
+    font-size: 0.65rem;
+    width: 100%;
+    margin: 0 0px 1rem 0px;
+    height: 2rem;
+  }
+
+  .containSpanProduct {
+    margin-bottom: 0.8rem;
+  }
+
+  .spanProduct {
+    font-size: 0.7rem;
+  }
+
+  .box {
+    width: 100%;
+    height: 45%;
+    opacity: 1;
+    filter: blur(17px);
+  }
+
+  .containerPaginator {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .sectionOne {
+    width: 90%;
+  }
+
+  .articleImg {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .articleText {
+    width: 45%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+  }
+
+  .buttonUs {
+    width: 70%;
+  }
+
+  .sectionTwo {
+    width: 85%;
+  }
+
+  .sectionThree {
+    width: 95%;
+  }
+  .sectionContact {
+    justify-content: space-between;
+    width: 85%;
+  }
+
+  .containerContact {
+    width: 50%;
+  }
+}
+
+/* Responsive para dispositivos TABLET */
+@media (min-width: 768px) and (max-width: 992px) {
+  .titlePage {
+    font-size: 1.8rem;
+  }
+
+  .bodyPage {
+    font-size: 1.1rem;
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .containerSelects {
+    margin-right: auto !important;
+    margin-left: auto !important;
+    width: 100%;
+  }
+
+  .articleSelect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+
+  .select {
+    width: 70%;
+  }
+
+  .select-text {
+    width: 100%;
+  }
+  .select-bar {
+    width: 100%;
+  }
+
+  .containerButtonSearch {
+    margin-top: 1rem;
+    width: 70%;
+  }
+
+  .buttonSearch {
+    height: 2.2rem;
+  }
+
+  /* CONTAINERS CARDS */
+  .containerCards {
+    width: 96%;
+    justify-content: center;
+  }
+
+  .card {
+    max-width: 50%;
+  }
+
+  .containerDetail {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .buttonDetail {
+    font-size: 0.65rem;
+    width: 100%;
+    margin: 0 0px 1rem 0px;
+    height: 2rem;
+  }
+
+  .containSpanProduct {
+    margin-bottom: 0.8rem;
+  }
+
+  .spanProduct {
+    font-size: 0.7rem;
+  }
+
+  .box {
+    width: 100%;
+    height: 45%;
+    opacity: 1;
+    filter: blur(17px);
+  }
+
+  .containerPaginator {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .sectionOne {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .articleImg {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .articleText {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .titleUs {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .textUs {
+    text-align: center;
+  }
+
+  .buttonUs {
+    width: 70%;
+    margin: auto;
+  }
+
+  .sectionTwo {
+    width: 80%;
+  }
+
+  .containerIcon {
+    width: 130px;
+    height: 130px;
+  }
+
+  .titleInfo {
+    font-size: 2rem;
+  }
+
+  .sectionThree {
+    width: 90%;
+    padding-bottom: 5rem;
+  }
+
+  .mainLast {
+    padding-top: 5rem;
+  }
+
+  .sectionContact {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+  }
+
+  .containerContact {
+    width: 60%;
+  }
+
+  .buttonForm {
+    width: 106%;
+    font-size: 0.8rem;
+    height: 2.8rem;
+  }
+}
+
+/* Responsive para dispositivos MOBILE */
+@media (max-width: 768px) {
+  .titlePage {
+    font-size: 1.8rem;
+  }
+
+  .bodyPage {
+    font-size: 1.1rem;
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .containerSelects {
+    margin-right: auto !important;
+    margin-left: auto !important;
+    width: 100%;
+    padding-bottom: 1.5rem;
+  }
+
+  .articleSelect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+
+  .select {
+    width: 70%;
+  }
+
+  .select-text {
+    width: 100%;
+  }
+  .select-bar {
+    width: 100%;
+  }
+
+  .containerButtonSearch {
+    margin-top: 1rem;
+    width: 70%;
+  }
+
+  .buttonSearch {
+    height: 2.5rem;
+  }
+
+  /* CONTAINERS CARDS */
+  .containerCards {
+    width: 96%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    max-width: 65%;
+    margin-top: 4.5rem;
+  }
+
+  .containerDetail {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .buttonDetail {
+    font-size: 0.65rem;
+    width: 100%;
+    margin: 0 0px 1rem 0px;
+    height: 2rem;
+  }
+
+  .containSpanProduct {
+    margin-bottom: 0.8rem;
+  }
+
+  .spanProduct {
+    font-size: 0.7rem;
+  }
+
+  .box {
+    width: 100%;
+    height: 45%;
+    opacity: 1;
+    filter: blur(17px);
+  }
+
+  .containerPaginator {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .sectionOne {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .articleImg {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .articleText {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .titleUs {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .textUs {
+    text-align: center;
+  }
+
+  .buttonUs {
+    width: 70%;
+    margin: auto;
+  }
+
+  .sectionTwo {
+    width: 90%;
+    display: flex;
+  }
+
+  .containerIcon {
+    width: 130px;
+    height: 130px;
+  }
+
+  .titleInfo {
+    font-size: 1.5rem;
+  }
+
+  .sectionThree {
+    width: 90%;
+    padding-bottom: 5rem;
+  }
+
+  .titleIconsValues {
+    font-size: 1rem;
+  }
+
+  .textIconsValues {
+    font-size: 0.8rem;
+  }
+
+  .mainLast {
+    padding-top: 5rem;
+  }
+
+  .sectionContact {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .containerContact {
+    width: 60%;
+  }
+
+  .buttonForm {
+    width: 106%;
+    font-size: 0.8rem;
+    height: 2.8rem;
+  }
 }
